@@ -1,0 +1,137 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "bg": "transparent",
+    "fg": "#D4BE98",
+    "blue": "#7DAEA3",
+    "green": "#A9B665",
+    "yellow": "#D8A657",
+    "red": "#EA6962",
+    "purple": "#D3869B",
+    "cyan": "#89B482",
+    "gray": "#7C6F64",
+    "bright": "#DDC7A1",
+    "lavender": "#B39BBE"
+  },
+  "blocks": [
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "p:bg",
+          "foreground": "p:lavender",
+          "leading_diamond": "\ue0b6",
+          "options": {
+            "style": "folder"
+          },
+          "style": "diamond",
+          "template": "󰉋 {{ .Folder }}  ",
+          "trailing_diamond": "\ue0b4",
+          "type": "path"
+        },
+        {
+          "type": "text",
+          "style": "diamond",
+          "background": "p:bg",
+          "foreground": "p:green",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4 ",
+          "template": "{{ $m := or .Env.OMP_VI_MODE \"INS\" }}{{ if eq $m \"INS\" }}<#A9B665> INS</>{{ else if eq $m \"NOR\" }}<#E78A4E> NOR</>{{ else if eq $m \"VIS\" }}<#D3869B> VIS</>{{ else }}<#8FBFAD> {{ $m }}</>{{ end }}  "
+        },
+        {
+          "background": "p:bg",
+          "foreground": "p:blue",
+          "leading_diamond": " \ue0b6",
+          "options": {
+            "branch_icon": ""
+          },
+          "properties": {
+            "branch_icon": ""
+          },
+          "style": "diamond",
+          "template": " {{ .HEAD }}{{ if .Working.Changed }} *{{ end }}{{ if gt .Ahead 0 }} ↑{{ .Ahead }}{{ end }}{{ if gt .Behind 0 }} ↓{{ .Behind }}{{ end }}  ",
+          "trailing_diamond": "\ue0b4",
+          "type": "git"
+        },
+        {
+          "background": "p:bg",
+          "foreground": "p:yellow",
+          "leading_diamond": " \ue0b6",
+          "options": {
+            "display_default": false,
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "{{ if and .Venv (ne .Venv \"base\") }} {{ .Venv }} · {{ .Full }}{{ end }}  ",
+          "trailing_diamond": "\ue0b4",
+          "type": "python"
+        },
+        {
+          "background": "p:bg",
+          "foreground": "p:cyan",
+          "leading_diamond": " \ue0b6",
+          "options": {
+            "fetch_version": false
+          },
+          "style": "diamond",
+          "template": "\ue626{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}  ",
+          "trailing_diamond": "\ue0b4",
+          "type": "go"
+        },
+        {
+          "background": "p:bg",
+          "foreground": "p:green",
+          "leading_diamond": " \ue0b6",
+          "options": {
+            "fetch_version": false
+          },
+          "style": "diamond",
+          "template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}  ",
+          "trailing_diamond": "\ue0b4",
+          "type": "node"
+        },
+        {
+          "background": "p:bg",
+          "foreground": "p:red",
+          "leading_diamond": " \ue0b6",
+          "options": {
+            "fetch_version": false
+          },
+          "style": "diamond",
+          "template": "\ue738{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}  ",
+          "trailing_diamond": "\ue0b4",
+          "type": "java"
+        },
+        {
+          "type": "executiontime",
+          "style": "diamond",
+          "background": "p:bg",
+          "foreground": "p:yellow",
+          "leading_diamond": " \ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "properties": {
+            "threshold": 0
+          },
+          "template": "󰔛 {{ .FormattedMs }} "
+        }
+      ],
+      "type": "rprompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "p:bg",
+          "foreground": "p:blue",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": " 󰀵 mayank ",
+          "trailing_diamond": "\ue0b4 ",
+          "type": "session"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 4
+}

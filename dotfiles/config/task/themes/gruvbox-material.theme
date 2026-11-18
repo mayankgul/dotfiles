@@ -1,0 +1,61 @@
+# Gruvbox Material - Dark Medium
+# Based on the user's Neovim palette, mapped to xterm 256 colors.
+
+# General output
+color=1
+fontunderline=1
+
+# Report headings and labels
+color.label=color144
+color.label.sort=color109
+color.alternate=on color236
+
+# Task states
+color.active=color109
+color.scheduled=color109
+color.overdue=color167
+color.due.today=color173
+color.due=color179
+color.until=color144
+
+# Dependencies
+color.blocking=color174
+color.blocked=color242
+
+# Task metadata
+color.recurring=color72
+color.tagged=color143
+color.tag.none=color242
+color.project.none=color144
+
+# Priority (Taskwarrior 2.4.3+ uses a UDA for priority)
+color.uda.priority.H=color167
+color.uda.priority.M=color179
+color.uda.priority.L=color143
+color.uda.priority.none=color144
+
+# Completed and deleted tasks
+color.completed=color242
+color.deleted=color59
+
+# Calendar
+color.calendar.today=black on color109
+color.calendar.due=black on color143
+color.calendar.due.today=black on color179
+color.calendar.overdue=black on color167
+color.calendar.scheduled=black on color109
+color.calendar.weekend=color144
+color.calendar.holiday=color179
+color.calendar.weeknumber=color144
+
+# History and undo
+color.history.add=color109
+color.history.done=color143
+color.history.delete=color173
+color.undo.before=color167
+color.undo.after=color143
+
+# Sync
+color.sync.added=color143
+color.sync.changed=color179
+color.sync.rejected=color167

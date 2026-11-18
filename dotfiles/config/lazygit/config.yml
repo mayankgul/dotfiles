@@ -1,0 +1,35 @@
+gui:
+  theme:
+    activeBorderColor:
+      - "#7DAEA3"
+      - bold
+
+    inactiveBorderColor:
+      - "#45403D"
+
+    selectedLineBgColor:
+      - "#32302F"
+
+    searchingActiveBorderColor:
+      - "#A9B665"
+      - bold
+
+    optionsTextColor:
+      - "#D8A657"
+
+    cherryPickedCommitFgColor:
+      - "#D3869B"
+
+    cherryPickedCommitBgColor:
+      - "#282828"
+
+    unstagedChangesColor:
+      - "#EA6962"
+
+    defaultFgColor:
+      - "#D4BE98"
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never

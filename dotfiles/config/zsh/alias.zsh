@@ -1,0 +1,10 @@
+# my aliases
+alias zshconfig="nvim ~/.zshrc"
+alias music="mpd ~/.config/mpd/mpd.conf"
+alias obsidian-notes="$HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/notes"
+alias tmux-new="tmux new-session -A -s new"
+alias ls="lsd"
+alias cprun="g++-16 -std=c++20 -O2 -Wall -Wextra"
+alias vim="nvim"
+alias v="nvim"
+alias tw="taskwarrior-tui"

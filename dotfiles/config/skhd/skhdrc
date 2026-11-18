@@ -1,0 +1,71 @@
+hyper - t : open -a "WezTerm"
+hyper - q : open -a "Zen"
+
+# --- keys for yabai window manager ---
+
+# change window focus
+
+## change window focus within a space
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+## change focus between external displays
+alt - a : yabai -m display --focus west
+alt - s : yabai -m display --focus south
+alt - d : yabai -m display --focus north
+alt - f : yabai -m display --focus east
+
+# modify layout of windows
+
+## balance out tree of windows (resize to occupy equal space)
+hyper - e : yabai -m space --balance
+
+## rotate layout clockwise
+hyper - r : yabai -m space --rotate 270
+
+## flip along y-axis
+hyper - z : yabai -m space --mirror y-axis
+
+## flip along x-axis
+hyper - x : yabai -m space --mirror x-axis
+
+# move windows around
+
+## swap windows
+hyper - h : yabai -m window --swap west
+hyper - j : yabai -m window --swap south
+hyper - k : yabai -m window --swap north
+hyper - l : yabai -m window --swap east
+
+## maximize window
+ctrl + cmd - m : yabai -m window --toggle zoom-fullscreen
+
+## toggle window float
+ctrl + cmd - c : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+## move window and split
+ctrl + alt - h : yabai -m window --warp west
+ctrl + alt - j : yabai -m window --warp south
+ctrl + alt - k : yabai -m window --warp north
+ctrl + alt - l : yabai -m window --warp east
+
+## move window to a differet display
+hyper - a : yabai -m window --display west; yabai -m display --focus west;
+hyper - s : yabai -m window --display south; yabai -m display --focus south;
+hyper - d : yabai -m window --display north; yabai -m display --focus north;
+hyper - f : yabai -m window --display east; yabai -m display --focus east;
+
+## nove window between spaces (REQUIRES SIP TO BE PARTIALLY DISABLED)
+### hyper - p : yabai -m window --space prev
+### hyper - n : yabai -m window --space next
+### hyper - 1 : yabai -m window --space 1
+### hyper - 2 : yabai -m window --space 2
+### hyper - 3 : yabai -m window --space 3
+### hyper - 4 : yabai -m window --space 4
+### hyper - 5 : yabai -m window --space 5
+
+# start/stop yabai
+ctrl + alt - q : yabai --stop-service
+ctrl + alt - s : yabai --start-service

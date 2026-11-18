@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Session.vim
+
+# Temporary files and logs
+*.tmp
+*.bak
+*.log
+
+# Environment and secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Node
+node_modules/
+
+# Shell
+.history
+.zcompdump*
+.zsh_history
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Karabiner automatic backups
+dotfiles/config/karabiner/automatic_backups/
+
+# Local configuration for tmux
+dotfiles/config/tmux/local.conf
+
+# TMUX plugins
+dotfiles/config/tmux/plugins/

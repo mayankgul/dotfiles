@@ -1,0 +1,39 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "bb758e2"
+hash = "88e56a64b7ce7c4314427452343fef17"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "bb758e2"
+hash = "187cc58ba7ac3befd49c342129e6f1b6"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "bb758e2"
+hash = "5b1c276b75cae91cbbdbe7863f39a540"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "bb758e2"
+hash = "7b625412411be411153886894d9acaf"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "bb758e2"
+hash = "7a4b4237223aaa94e589d1c01a23542a"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+rev = "bb758e2"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[[flavor.deps]]
+use = "identityapproved/lain"
+rev = "e2a3bb2"
+hash = "992f7d08d6093732621ff49022ef6053"
+
+[[flavor.deps]]
+use = "matt-dong-123/gruvbox-material"
+rev = "e0fd2d8"
+hash = "8f46ca96c0bbe1bdfb4fa201dd5eed4b"

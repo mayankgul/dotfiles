@@ -1,0 +1,16 @@
+[[session]]
+name = "dotfiles"
+alias = "df"
+path = "~/Documents/Code/dotfiles"
+startup_command = "nvim ."
+windows = ["zsh"]
+
+[[window]]
+name = "zsh"
+
+
+[[session]]
+name = "dashboard"
+alias = "dash"
+path = "~"
+startup_command = "~/.config/sesh/scripts/dashboard.sh"
