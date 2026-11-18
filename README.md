@@ -172,7 +172,7 @@ Individual configurations may require additional tools or application-specific d
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mayankgul/dotfiles.git
 cd dotfiles
 ```
 
