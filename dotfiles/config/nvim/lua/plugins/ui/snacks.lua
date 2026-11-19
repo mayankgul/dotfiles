@@ -5,13 +5,15 @@ return {
       explorer = {
         enabled = false,
       },
-      styles = {
-        terminal = {
-          position = "float",
-          height = 0.8,
-          width = 0.8,
-        },
-      },
+
+      -- styles = {
+      --   terminal = {
+      --     position = "float",
+      --     height = 0.8,
+      --     width = 0.8,
+      --   },
+      -- },
+
       dashboard = {
         preset = {
           header = require("utils.dashboard").header,
