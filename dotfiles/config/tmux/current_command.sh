@@ -3,6 +3,7 @@
 cmd="$(tmux display-message -p '#{pane_current_command}')"
 
 case "$cmd" in
+opencode) echo "  opencode" ;;
 nvim) echo " neovim" ;;
 yazi) echo " yazi" ;;
 node) echo " node" ;;
