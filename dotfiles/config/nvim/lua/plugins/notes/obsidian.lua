@@ -129,4 +129,9 @@ return {
 
     require("utils.obsidian_backlinks").setup()
   end,
+
+  vim.keymap.set("n", "<leader>oo", "<cmd>ObsidianOpen<cr>", {
+    buffer = true,
+    desc = "Open note in Obsidian",
+  }),
 }

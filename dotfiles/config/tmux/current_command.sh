@@ -3,6 +3,7 @@
 cmd="$(tmux display-message -p '#{pane_current_command}')"
 
 case "$cmd" in
+taskwarrior-tui) echo " tasks" ;;
 opencode) echo "  opencode" ;;
 nvim) echo " neovim" ;;
 yazi) echo " yazi" ;;
