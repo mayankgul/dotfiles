@@ -14,6 +14,10 @@ return {
     opts = {
       lang = "cpp",
 
+      editor = {
+        reset_previous_code = false,
+      },
+
       theme = {
         [""] = { fg = colors.fg },
         normal = { fg = colors.fg },
