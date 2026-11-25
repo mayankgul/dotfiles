@@ -12,6 +12,10 @@ return {
     opts = {
       lang = "cpp",
 
+      storage = {
+        home = "~/Documents/Code/dsa/leetcode",
+      },
+
       picker = {
         provider = "snacks-picker",
       },
